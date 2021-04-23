@@ -12,10 +12,14 @@ const account = instance.sequelize.define("accounts",{
         type: DataTypes.STRING,
         allowNull:false
       },
-      username:{
+      email:{
         type: DataTypes.STRING,
         allowNull:false,
         unique: true
+      },
+      name:{
+        type: DataTypes.STRING,
+        allowNull:false,
       },
       password:{
         type: DataTypes.STRING,
@@ -29,5 +33,7 @@ const account = instance.sequelize.define("accounts",{
         tableName:"accounts"
     }
 )
+
+
 
 exports.model = account;
