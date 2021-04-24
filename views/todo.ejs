@@ -39,8 +39,8 @@
                    <% }%>
                     </div>
                     <div class="p-2"><button class="btn btn-success edit">Edit</button></div>
-                    <div class="p-2"><form action="/delete" method="post"><input type="hidden" name="id" value="<%= result[i].task_id %>"><button type="submit" class="btn btn-danger">Delete</button></form></div>
-                    <div class="p-2"><form action="/stat" method="post"><input type="hidden" name="id" value="<%= result[i].task_id %>"><input type="hidden" name="stat" value="<%= stat %>"><button type="submit" style="visibility: hidden;"></button></form></div>
+                    <div class="p-2"><form action="/deletetodo" method="post"><input type="hidden" name="id" value="<%= result[i].todo_id %>"><button type="submit" class="btn btn-danger">Delete</button></form></div>
+                    <div class="p-2"><form action="/stattodo" method="post"><input type="hidden" name="id" value="<%= result[i].todo_id %>"><input type="hidden" name="stat" value="<%= stat %>"><button type="submit" style="visibility: hidden;"></button></form></div>
                 </div>
             </span>
         </div>
